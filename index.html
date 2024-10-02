@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+
+    <style>
+        .jokes-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 50%;
+            margin: 0 auto;
+            background-image: linear-gradient(to bottom right, rgb(244, 224, 244), rgb(244, 93, 244), rgb(218, 255, 108));
+            border-radius: 1.5rem;
+        }
+
+        .jokes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 80%;
+            background: #fff;
+            border-radius: 1.5rem;
+            background-color: black;
+            color: white;
+        }
+
+        #jokeContainer {
+            list-style: none;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        #jokeContainer li {
+            list-style: none;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .jokes-container {
+                width: 90%;
+                font-size: small;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="jokes-container">
+        <h1>The jokes are here !</h1>
+        <div class="jokes">
+            <ul id="jokeContainer"></ul>
+        </div>
+        <button onclick="refreshPage()">CHANGE!</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
